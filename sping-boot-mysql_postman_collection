@@ -1,0 +1,122 @@
+{
+	"info": {
+		"_postman_id": "ffa2d6eb-3e5d-403a-ae66-8a49f11691ac",
+		"name": "matelso-assignment-asif spring",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6564160"
+	},
+	"item": [
+		{
+			"name": "Post/CreateNew",
+			"protocolProfileBehavior": {
+				"strictSSL": false
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 0,\r\n  \"salutation\": \"mrs\",\r\n  \"firstname\": \"asma\",\r\n  \"lastname\": \"islam\",\r\n  \"displayname\": \"\",\r\n  \"birthdate\": \"1985-04-27\",\r\n  \"email\": \"farjana.as@gmail.com\",\r\n  \"phonenumber\": \"4917616743289\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8090/api/Contacts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"Contacts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getById",
+			"protocolProfileBehavior": {
+				"strictSSL": false
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/api/Contacts/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"Contacts",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put/update",
+			"protocolProfileBehavior": {
+				"strictSSL": false
+			},
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n            \"id\": 2,\r\n            \"salutation\": \"mr.\",\r\n            \"firstname\": \"asif\",\r\n            \"lastname\": \"mahamud\",\r\n            \"displayname\": \"mr. asif mahamud\",\r\n            \"birthdate\": \"1985-02-10\",            \r\n            \"email\": \"asif.mcse@gmail.com\",\r\n            \"phonenumber\": \"4917616743289\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8090/api/Contacts/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"Contacts",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getall",
+			"protocolProfileBehavior": {
+				"strictSSL": false
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/api/Contacts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"Contacts"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
